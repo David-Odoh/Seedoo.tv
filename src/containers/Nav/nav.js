@@ -7,7 +7,7 @@ export default class nav extends Component {
                 <div className="alt">
                     <div className="tabs home_tabs">
                         <ul className="row">
-                            <li>Background Info</li>
+                            <li className="card">Background Info</li>
                             <li>News</li>
                             <li>Videos</li>
                             <li>Xperience Seedoo.tv</li>
