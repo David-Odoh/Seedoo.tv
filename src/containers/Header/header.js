@@ -12,13 +12,13 @@ export default class header extends Component {
                             <div className="left">
                                 <ul className="options left dark-bg">
                                     <li className="header-link">
-                                        <a href="#">Perks</a>
+                                        <a href="#"><span className="fa fa-facebook"></span></a>
                                     </li>
                                     <li className="header-link">
-                                        <a href="#">Gist</a>
+                                        <a href="#"><span className="fa fa-twitter"></span></a>
                                     </li>
                                     <li className="header-link">
-                                        <a target="_blank" href="https://issuu.com/lostinlagosmagazine/docs/lil_july_2018">LIL Magazine</a>
+                                        <a href="#"><span className="fa fa-instagram"></span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -26,7 +26,7 @@ export default class header extends Component {
                             <div className="login right dark-bg">
                                 <ul>
                                     <li className="left header-link">
-                                        <a href="#">List a Business</a>
+                                        <a href="#">Download Seedoo App!</a>
                                     </li>
                                     <li className="left">
                                         <a className="call-to-action" href="#">LOG IN</a>
@@ -53,14 +53,14 @@ export default class header extends Component {
                 <div className="hero">
                     <div className="row">
                         <div className="md-6 cols md-centered">
-                            <h1>Discover, Experience, Love Lagos</h1>
+                            <h1>Experience the <span className="our-green">Art</span> of Mobile Entertainment</h1>
 
-                            <form accept-charset="UTF-8" action="#" method="get">
+                            <form acceptCharset="UTF-8" action="#" method="get">
                                 <div className="displayNone">
                                     <input name="utf8" type="hidden" value="✓" />
                                 </div>
                                 <div className="inputGroup editSelect">
-                                    <input id="homeSearch" name="query" placeholder="Search for anything e.g Pool, Indian, Lekki.." type="text" />
+                                    <input id="homeSearch" name="query" placeholder="What would you like to find?" type="text" />
                                 </div>
                                 <input className="btn blue visibilityHidden" name="commit" type="submit" value="Search" />
                             </form>
@@ -68,10 +68,10 @@ export default class header extends Component {
                     </div>
 
                     <p className="photoCredits">
-                        <span>Sugarcane</span>
+                        <span></span>
                     </p>
                 </div>
-            </div>
+            </div >
         )
     }
 }

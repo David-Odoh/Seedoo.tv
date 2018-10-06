@@ -2470,6 +2470,10 @@ section {
     font-size: 1.4rem
 }
 
+.header .top .header-link span {
+    font-size: 2rem;
+}
+
 @media all and (min-width:320px) and (max-width:640px) {
     .header .top .header-link {
         font-size: 11px
@@ -2507,7 +2511,7 @@ section {
 }
 
 .header .top .call-to-action:hover {
-    background: #1167be
+    background: #BEE6BE
 }
 
 @media all and (min-width:320px) and (max-width:640px) {
@@ -2659,7 +2663,7 @@ section {
     background: yellow;
     padding: 20px 40px;
     line-height: 1;
-    margin: 5px 0 0 0
+    margin: 5px 0 0 0;
 }
 
 .header.bg {
@@ -2840,7 +2844,9 @@ section {
 .hero h1 {
     font-weight: 100;
     font-size: 40px;
-    font-size: 4rem
+    font-size: 4rem;
+    font-weight: 400;
+    font-style: italic;
 }
 
 @media all and (min-width:320px) and (max-width:640px) {
@@ -11219,4 +11225,11 @@ screen and (max-height:300px) {
 
 [dir="rtl"] .slick-slide {
     float: right
+}
+
+@media (max-width: 640px) {
+    img, object, embed {
+        max-width: 200%;
+        height: auto;
+    }
 }
