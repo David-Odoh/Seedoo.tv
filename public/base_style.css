@@ -2511,7 +2511,10 @@ section {
 }
 
 .header .top .call-to-action:hover {
-    background: #BEE6BE
+    background: #63D863
+}
+.header .top .call-to-action:focus {
+    background: #63D863
 }
 
 @media all and (min-width:320px) and (max-width:640px) {
