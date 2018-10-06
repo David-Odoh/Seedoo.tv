@@ -1,0 +1,11 @@
+.displayNone {
+    display: none;
+}
+
+.visibilityHidden {
+    visibility: hidden;
+}
+
+.hero {
+    background-image: url('./../../img/bg1.jpg');
+}
