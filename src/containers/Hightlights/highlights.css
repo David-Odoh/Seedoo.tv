@@ -1,0 +1,9 @@
+.content-wrap {
+    display: block;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 10px;
+}
