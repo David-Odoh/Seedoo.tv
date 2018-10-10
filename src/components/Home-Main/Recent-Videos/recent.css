@@ -1,0 +1,14 @@
+ .recent {
+     padding-bottom: 30px;
+ }
+ .recent h3 {
+    font-size: 18px;
+    color: #745fb5;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: solid 1px rgba(102,119,136,.2);
+    line-height: 1.2;
+    font-weight: 400;
+ }

@@ -12,3 +12,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.card {
+  display: grid;
+  color: #fff;
+  background: linear-gradient(5deg,#745fb5,#9066b8);
+  box-shadow: rgba(102, 119, 136, 0.55) .5px 2px 2px;
+  border-radius: 2px;
+  padding: 16px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.card:hover {
+  background: #5f4aa1;
+}
+
+.card p, .card a strong {
+   color: rgb(255, 255, 255);
+   text-align: left;
+   font-size: 16px;
+   font-weight: 500;
+}

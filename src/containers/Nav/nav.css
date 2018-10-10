@@ -1,18 +1,6 @@
 * {
         box-sizing: border-box;
 }
-.card {
-        box-shadow: 0 0 24px 0 rgba(141,141,141,.35);
-        height: 100px;
-        transition: .3s ease;
-        padding: 0 10px;
-        border-radius: 4px;
-}
-.card:hover {
-        box-shadow: 0 0 24px 0 rgba(141,141,141,.35);
-        height: 80px;
-        transition: .3s ease;
-}
 
 .home_tabs > ul {
         display: grid;
@@ -27,7 +15,7 @@
         grid-template-columns: 1fr;
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: right;
     }
 .row:before, .row:after {
     content: "";
@@ -39,7 +27,7 @@
         display: block;
         width: 0;
         height: 4px;
-        background: #01d202;
+        background: #77dab2;
         transition: width .3s;
     }
     
@@ -50,28 +38,21 @@
 .tabs li a {
         display: grid;
         width: 100%;
-        justify-content: right;
+        padding-bottom: 20px;
+        color: #77dab2; /*New Green*/
         transition: .3s ease;
 }
 
 .tabs li span {
+        display: flex;
         margin-top: 0px;
         height: 0px;
         width: 100%;
+        float: right;
 }
 
-.tabs li p {
-        display: block;
-        text-transform: uppercase;
-        font-size: 12px;
-        font-size: 14px;
-        color: #818181;
-        letter-spacing: 0px;
-        width: 100%;
-        font-weight: 600;
-    }
-.tabs li p:hover {
-        color: #01d202 !important
+.card {
+        height: 80px;
 }
 
 @media (max-width: 640px) {
@@ -82,3 +63,4 @@
                 margin: 0;
         }
 }
+

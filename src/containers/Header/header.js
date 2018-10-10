@@ -28,10 +28,10 @@ export default class header extends Component {
                                     <li className="left header-link">
                                         <a href="#">Download Seedoo App!</a>
                                     </li>
-                                    <li className="left">
+                                    <li className="left green-blue">
                                         <a className="call-to-action" href="#">LOG IN</a>
                                     </li>
-                                    <li className="left">
+                                    <li className="left green-blue">
                                         <a className="call-to-action" href="#">REGISTER</a>
                                     </li>
                                 </ul>

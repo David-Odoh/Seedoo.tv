@@ -1,0 +1,41 @@
+.email-wrapper {
+    margin-bottom: 30px;
+}
+
+.card {
+    height: 100%
+}
+
+.email-card {
+    padding: 32px;
+}
+
+.contentInside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.contentInside input {
+    background: #fff;
+    box-shadow: 0 6px 8px rgba(102,119,136,.03), 0 2px 2px rgba(102,119,136,.3);
+    align-items: center;
+    cursor: text;
+    height: 35px;
+}
+
+.pushButton {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    background: #4f3d85;
+    color: #fff;
+}
+
+.pushButton:hover {
+    background: #3e3069;
+}

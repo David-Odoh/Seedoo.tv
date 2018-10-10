@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Header from './containers/Header/header';
 import Nav from './containers/Nav/nav';
-import Highlight from './containers/Hightlights/highlights';
+import './App.css';
+import Home from './containers/Home/home';
 
 class App extends Component {
   render() {
@@ -9,7 +10,7 @@ class App extends Component {
       <div className="App">
         <Header></Header>
         <Nav></Nav>
-        <Highlight></Highlight>
+        <Home></Home>
       </div>
     );
   }

@@ -9,40 +9,41 @@ export default class nav extends Component {
                     <div className="tabs home_tabs">
                         <ul className="row">
                             <li className="card">
-                                <a href="#">
-                                    <span className="fa fa-file-alt"></span>
+                                <a>
+                                  <strong>About</strong>
+                                  <span>Us</span>
                                 </a>
-                                <p>Background Info</p>
                             </li>
                             <li className="card">
-                                <a href="#">
-                                    <span className="fa fa-bell"></span>
+                                <a>
+                                  <strong>News</strong>
+                                  <span>Bits</span>
                                 </a>
-                                <p>News</p>
                             </li>
                             <li className="card">
-                                <a href="#">
-                                    <span className="fa fa-video"></span>
+                                <a>
+                                  <strong>Videos</strong>
+                                  <span>Highlights</span>
                                 </a>
-                                <p>Videos</p>
                             </li>
                             <li className="card">
-                                <a href="#">
-                                    <span className="fa fa-tv"></span>
+                                <a>
+                                  <strong>Xperience</strong>
+                                  <span>Seedoo.tv</span>
                                 </a>
-                                <p>Xperience Seedoo.tv</p>
                             </li>
                             <li className="card">
-                                <a href="#">
-                                    <span className="fa fa-address-book"></span>
+                                <a>
+                                  <strong>Contact</strong>
+                                  <span>Us</span>
                                 </a>
-                                <p>Contact Us</p>
                             </li>
                             <li className="card">
-                                <a href="#">
-                                    <span className="fa fa-download"></span>
+                                <a>
+                                  <strong>Our App</strong>
+                                  <span>Download</span>
                                 </a>
-                                <p>Mobile App Download</p></li>
+                                </li>
                         </ul>
                     </div>
                 </div>
