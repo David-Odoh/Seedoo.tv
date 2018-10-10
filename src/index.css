@@ -17,7 +17,7 @@ code {
   display: grid;
   color: #fff;
   background: linear-gradient(5deg,#745fb5,#9066b8);
-  box-shadow: rgba(102, 119, 136, 0.55) .5px 2px 2px;
+  box-shadow: rgba(102, 119, 136, 0.55) .5px 1px 2px;
   border-radius: 2px;
   padding: 16px;
   text-decoration: none;
