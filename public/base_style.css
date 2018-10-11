@@ -2072,6 +2072,9 @@ button {
 a {
     color: #01d202
 }
+a:hover, a:focus {
+    color: #039603
+}
 
 .clearfix:before,
 .clearfix:after {

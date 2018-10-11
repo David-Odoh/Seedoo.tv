@@ -13,9 +13,9 @@ export default class email extends Component {
                             <span className="description">
                                 Stay up to date with current happens, entertainment and news.
                             </span>
-                            <input type="text" />
+                            <input type="text" placeholder="Enter Email" />
                             <span className="pushButton">
-                                Newsletter
+                                Subscribe
                             </span>
                         </div>
                     </a>

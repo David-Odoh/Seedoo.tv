@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 
 import './tile.css';
 
-export default class tile extends Component {
-    render() {
-        return (
-            <div>
-                <div className="tile">
-                    <div className="title-head">
-                        <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap" />
-                    </div>
-                    <div className="tile body">
-                    </div>
+const tile = (props) => {
+    return (
+        <div>
+            <div className="tile">
+                <div className="title-head">
+                    <img className="card-img-top" src={props.tileImg} alt="Card image cap" />
+                </div>
+                <div className="tile-body">
+                    <h4 className="tile-title">{props.tileTitle}</h4>
+                    <hr />
+                    <p className="tile-text">{props.tileSum}</p>
+                    <a href="#!" className="watch-vid">
+                        <p className="read-more">{props.btnTitle}
+                            <i className="fa fa-angle-double-right"></i>
+                        </p>
+                    </a>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
+export default tile;

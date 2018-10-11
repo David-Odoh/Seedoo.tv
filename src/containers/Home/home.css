@@ -8,3 +8,13 @@
     grid-column-gap: 10px;
     border: none;
 }
+
+
+@media (max-width: 970px) {
+    .homeWrapper {
+        grid-template-columns: 1fr;
+    }
+    .homeWrapper aside {
+        display: none;
+    } 
+ }

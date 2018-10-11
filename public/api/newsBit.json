@@ -1,0 +1,32 @@
+[
+    {
+        "id": "9aa113b4-1e4e-4cde-bf9d-8358fc78ea4f",
+        "newsImageUrl": "https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%28131%29.jpg",
+        "newsTitle": "Jaxx Cosmetics",
+        "newsSummary": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id": "9aa113b4-1e4e-4cde-bf9d-435345345fs",
+        "newsImageUrl": "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+        "newsTitle": "Jaxx Cosmetics",
+        "newsSummary": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id": "9aa113b4-1e4e-4cde-bf9d-75675ghf4yg45",
+        "newsImageUrl": "https://mdbootstrap.com/img/Photos/Others/photo6.jpg",
+        "newsTitle": "Jaxx Cosmetics",
+        "newsSummary": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id": "9aa113b4-1e4e-4cde-bf9d-fg44gju678j78",
+        "newsImageUrl": "https://mdbootstrap.com/img/Photos/Others/images/43.jpg",
+        "newsTitle": "Jaxx Cosmetics",
+        "newsSummary": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    },
+    {
+        "id": "9aa113b4-1e4e-4cde-bf9d-pipvj534bbb67",
+        "newsImageUrl": "https://mdbootstrap.com/img/Photos/Others/food.jpg",
+        "newsTitle": "Jaxx Cosmetics",
+        "newsSummary": "Some quick example text to build on the card title and make up the bulk of the card's content."
+    }
+]

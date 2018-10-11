@@ -1,0 +1,23 @@
+.footer {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.footer div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.footer img {
+    display: block;
+    max-width: 20%;
+    height: auto;    
+}
+
+@media (max-width:500px) {
+    img {
+        max-width: 40%;
+        height: auto;    
+    }
+}

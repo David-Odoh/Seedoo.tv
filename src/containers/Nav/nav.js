@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import NavCss from './nav.css';
+import './nav.css';
 
 export default class nav extends Component {
     render() {
@@ -10,40 +10,40 @@ export default class nav extends Component {
                         <ul className="row">
                             <li className="card">
                                 <a>
-                                  <strong>About</strong>
-                                  <span>Us</span>
+                                    <strong>About</strong>
+                                    <span>Us</span>
                                 </a>
                             </li>
                             <li className="card">
                                 <a>
-                                  <strong>News</strong>
-                                  <span>Bits</span>
+                                    <strong>News</strong>
+                                    <span>Bits</span>
                                 </a>
                             </li>
                             <li className="card">
                                 <a>
-                                  <strong>Videos</strong>
-                                  <span>Highlights</span>
+                                    <strong>Videos</strong>
+                                    <span>Highlights</span>
                                 </a>
                             </li>
                             <li className="card">
                                 <a>
-                                  <strong>Xperience</strong>
-                                  <span>Seedoo.tv</span>
+                                    <strong>Xperience</strong>
+                                    <span>Seedoo.tv</span>
                                 </a>
                             </li>
                             <li className="card">
                                 <a>
-                                  <strong>Contact</strong>
-                                  <span>Us</span>
+                                    <strong>Contact</strong>
+                                    <span>Us</span>
                                 </a>
                             </li>
                             <li className="card">
                                 <a>
-                                  <strong>Our App</strong>
-                                  <span>Download</span>
+                                    <strong>Our App</strong>
+                                    <span>Download</span>
                                 </a>
-                                </li>
+                            </li>
                         </ul>
                     </div>
                 </div>

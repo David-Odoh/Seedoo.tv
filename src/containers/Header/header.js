@@ -23,7 +23,7 @@ export default class header extends Component {
                                 </ul>
                             </div>
 
-                            <div className="login right dark-bg">
+                            <div className="login right dark-bg animated slideInRight">
                                 <ul>
                                     <li className="left header-link">
                                         <a href="#">Download Seedoo App!</a>
@@ -41,8 +41,8 @@ export default class header extends Component {
 
                     <div className="bottom">
                         <div className="row">
-                            <div className="logo left">
-                                <a href="/">
+                            <div className="logo left animated slideInLeft">
+                                <a href="#">
                                     <img src={Logo} />
                                 </a>
                             </div>
@@ -60,7 +60,7 @@ export default class header extends Component {
                                     <input name="utf8" type="hidden" value="✓" />
                                 </div>
                                 <div className="inputGroup editSelect">
-                                    <input id="homeSearch" name="query" placeholder="What would you like to find?" type="text" />
+                                    <input id="homeSearch" className="animated fadeInDown" name="query" placeholder="What would you like to find?" type="text" />
                                 </div>
                                 <input className="btn blue visibilityHidden" name="commit" type="submit" value="Search" />
                             </form>
