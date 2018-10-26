@@ -1,8 +1,13 @@
 {
+    // Set the default
     "editor.formatOnSave": true,
+    // Enable per-language
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
     "editor.wordWrap": "on",
     "emmet.includeLanguages": {
-        "javascript":"javascriptreact"
+        "javascript": "javascriptreact"
     },
     "emmet.triggerExpansionOnTab": true
 }

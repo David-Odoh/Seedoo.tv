@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+import { BrowserRouter } from 'react-router-dom';
 
 import './index.css';
 import App from './App';
 import rootReducer from './reducers';
 import { fetchAllVideoHighlights } from './actions/videoHighlights';
 import { fetchAllNewsBits } from './actions/newsBit';
+import routes from './routes';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -19,7 +21,9 @@ store.dispatch(fetchAllNewsBits());
 
 ReactDOM.render(
     <Provider store={store}>
-        <App />
+        <BrowserRouter>
+            {routes()}
+        </BrowserRouter>
     </Provider>, document.getElementById('root'));
 
 serviceWorker.unregister();

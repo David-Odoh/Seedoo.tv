@@ -16,7 +16,7 @@
 }
 
 @media (max-width:500px) {
-    img {
+   .footer img {
         max-width: 40%;
         height: auto;    
     }

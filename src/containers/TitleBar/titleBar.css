@@ -1,0 +1,39 @@
+.titleBar {
+    margin-top: 60px;
+    background: #fff;
+}
+
+.titleBar .title-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding-top: 15px;
+}
+
+.titleBar .title, .titleBar .menu  {
+    color: #0d4e8f;
+    display: inline-block;
+    width: 100%;
+    clear: both;
+}
+
+ .titleBar .menu {
+    font-size: 18px;
+    font-weight: 400;
+ }
+
+.titleBar .title {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.titleBar .menu span {
+    padding-left: 10px;
+}
+
+.titleBar .menu {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: flex-end;
+    justify-content: right;
+}
