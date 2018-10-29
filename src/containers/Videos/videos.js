@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import './contactUs.css';
+import './videos.css';
 import SlimHeader from '../SlimHeader/slimHeader';
 import TitleBar from '../TitleBar/titleBar';
 
-export default class ContactUs extends Component {
+export default class Videos extends Component {
     render() {
         return (
-            <div>
+            <div className="videos">
                 <SlimHeader></SlimHeader>
-                <TitleBar barTitle="Contact Us"></TitleBar>
-                Contact Us Works but isn't finished
+                <TitleBar barTitle="Videos"></TitleBar>
+                Videos Works but isn't finished
             </div>
         )
     }

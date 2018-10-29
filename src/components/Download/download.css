@@ -1,0 +1,179 @@
+.downloadComp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding-top: 12rem;
+}
+
+.downloadComp img {
+    width: 700px;
+    height: auto;
+}
+
+.downloadComp .left {
+    display: block;
+    text-align: center;
+}
+
+.downloadComp h1 {
+    font-size: 3em;
+}
+
+.downloadComp h1, .downloadComp p {
+    color: #555459;
+}
+
+.downloadComp .download-btn {
+    padding: 10px 15px;
+    background: #2ab27b;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px 20%
+}
+
+.downloadComp .download-btn span {
+    font-style: italic;
+    font-size: .6em;
+    font-weight: 500;
+}
+
+.downloadComp .email-capture {
+    margin: 20px 20%
+}
+
+@media (max-width: 1500px) {
+    .downloadComp img {
+    width: 600px;
+    height: auto;
+}
+}
+@media (max-width: 1200px) {
+    .downloadComp .email-capture, 
+    .downloadComp .download-btn {
+    margin: 20px 15%
+}
+}
+
+@media (max-width: 940px) {
+    .downloadComp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding-top: 3rem;
+}
+.downloadComp .right {
+    display: flex;
+    grid-row-start: -1;
+    align-items: center;
+    justify-content: center;
+}
+.downloadComp img {
+    width: 500px;
+    height: auto;
+}
+
+.downloadComp .download-btn {
+    padding: 10px 15px;
+    background: #2ab27b;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 20px 25%
+}
+
+.downloadComp .download-btn span {
+    font-style: italic;
+    font-size: .6em;
+    font-weight: 500;
+}
+
+.downloadComp .email-capture {
+    margin: 20px 15%
+}
+
+.downloadComp h1 {
+    font-size: 2.2em;
+}
+
+.downloadComp .thisCard {
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.14);
+    background-clip: padding-box;
+    max-width: 100%;
+    margin: 0 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+    margin: 20px 15%
+}
+}
+
+@media all and (min-width:320px) and (max-width:640px) {
+
+    .downloadComp .thisCard {
+    border: none;
+    box-shadow: none;
+    max-width: 100%;
+    background-clip: none;
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    border-radius: 0px;
+    margin: 0%
+}
+
+    .downloadComp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding-top: 3rem;
+}
+.downloadComp .right {
+    display: flex;
+    grid-row-start: -1;
+    align-items: center;
+    justify-content: center;
+}
+.downloadComp img {
+    width: 300px;
+    height: auto;
+}
+
+.downloadComp .download-btn {
+    padding: 10px 15px;
+    background: #2ab27b;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 20px 10%
+}
+
+.downloadComp .download-btn span {
+    font-style: italic;
+    font-size: .6em;
+    font-weight: 500;
+}
+
+.downloadComp .email-capture {
+    margin: 20px 0px
+}
+
+.downloadComp h1 {
+    font-size: 2em;
+}
+
+.downloadComp p {
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.14);
+    background-clip: padding-box;
+    max-width: 100%;
+    margin: 0 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+}
+}

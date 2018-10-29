@@ -7,39 +7,38 @@ export default class TitleBar extends Component {
     constructor() {
         super()
         this.state = {
-            menuVisibility: true
+            menuVisibility: false
         }
     }
-
-
-    toggleMenuVisibility() {
+    toggleMenuVisibility = () => {
         this.setState({
             menuVisibility: !this.state.menuVisibility
         })
     }
 
-    displayMenuOptions() {
+    render() {
+        let displayMenuOptions = null;
+
         if (this.state.menuVisibility) {
-            return (
+            displayMenuOptions = (
                 <div className="menu-tiles">
                     <Nav></Nav>
                 </div>
-            )
+            );
         }
-    }
-    render() {
+
         return (
-            <div className="titleBar ">
+            <div className="titleBar">
                 <div className="title-menu row">
                     <div className="title">
-                        <span>Title Bar</span>
+                        <span>{this.props.barTitle}</span>
                     </div>
                     <div className="menu" onClick={this.toggleMenuVisibility}>
                         <span className="fa fa-bars"></span>
-                        <span>Change Menu</span>
+                        <span>{this.state.menuVisibility ? 'Hide' : 'Show'} Menu</span>
                     </div>
                 </div>
-                {this.displayMenuOptions}
+                {displayMenuOptions}
             </div>
         )
     }

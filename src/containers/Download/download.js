@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 
-import './aboutUs.css';
+import './download.css';
 import SlimHeader from '../SlimHeader/slimHeader';
 import TitleBar from '../TitleBar/titleBar';
 import Footer from '../footer/footer';
-import About from '../../components/AboutUs/aboutUs';
+import DownLoadComp from '../../components/Download/download'
 
-export default class AboutUs extends Component {
+export default class Download extends Component {
     render() {
         return (
-            <div>
+            <div className='download'>
                 <SlimHeader></SlimHeader>
-                <TitleBar barTitle="About Us"></TitleBar>
-                <About></About>
-                {/*<Footer></Footer>*/}
+                <TitleBar barTitle="Download"></TitleBar>
+                <DownLoadComp></DownLoadComp>
             </div>
         )
     }

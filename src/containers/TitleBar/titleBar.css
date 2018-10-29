@@ -6,11 +6,11 @@
 .titleBar .title-menu {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    padding-top: 15px;
+    padding: 15px;
 }
 
 .titleBar .title, .titleBar .menu  {
-    color: #0d4e8f;
+    color: #2ab27b;
     display: inline-block;
     width: 100%;
     clear: both;
@@ -19,11 +19,12 @@
  .titleBar .menu {
     font-size: 18px;
     font-weight: 400;
+    font-style: italic
  }
 
 .titleBar .title {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 900;
     text-transform: uppercase;
 }
 

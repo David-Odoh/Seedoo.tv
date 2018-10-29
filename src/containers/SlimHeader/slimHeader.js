@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './slimHeader.css';
 import Logo from '../../img/SeeDooTV_small.png';
@@ -22,13 +23,17 @@ export default class SlimHeader extends Component {
                     <div className="row">
                         <div className="left">
                             <div className="logo left">
-                                <a href="#">
-                                    <img src={Logo} />
-                                </a>
+                                <Link to='/'>
+                                    <a>
+                                        <img src={Logo} />
+                                    </a>
+                                </Link>
                             </div>
                             <div className="help left">
                                 <span className="helpCenter header-link">
-                                    <a href="#">Help Center</a>
+                                    <Link to='/contact'>
+                                        <a>Help Center</a>
+                                    </Link>
                                 </span>
                             </div>
                             <div className="center left">
@@ -41,19 +46,19 @@ export default class SlimHeader extends Component {
                         </div>
                         <div className="socials right">
                             <div className="search-icon-only">
-                                <img src={searchIcon} alt="" />
+                                <img src={searchIcon} alt="search" />
                                 <span>Search</span>
                             </div>
                             <div className="left">
                                 <ul className="options left dark-bg">
                                     <li className="header-link">
-                                        <a href="#"><span className="fa fa-facebook"></span></a>
+                                        <a href='https://www.facebook.com/seedootv/' target='_black'><span className="fa fa-facebook"></span></a>
                                     </li>
                                     <li className="header-link">
-                                        <a href="#"><span className="fa fa-twitter"></span></a>
+                                        <a href='https://twitter.com/seedootv' target='_black'><span className="fa fa-twitter"></span></a>
                                     </li>
                                     <li className="header-link">
-                                        <a href="#"><span className="fa fa-instagram"></span></a>
+                                        <a href='https://www.instagram.com/seedoo.tv/' target='_black'><span className="fa fa-instagram"></span></a>
                                     </li>
                                 </ul>
                             </div>

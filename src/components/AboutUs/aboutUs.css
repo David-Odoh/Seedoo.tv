@@ -1,0 +1,54 @@
+.aboutComp.row {
+    max-width: 50em;
+}
+
+.aboutComp {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutComp p, .aboutComp h1 {
+    color: #555459
+}
+.aboutComp .image{
+    display: flex;
+    width: 100%;  
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+.aboutComp .image img{
+    display: block;
+    max-width: 500px;
+    height: auto;
+    
+}
+
+.aboutComp .body {
+    border: 1px solid #DEDEDE;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.14);
+    background-clip: padding-box;
+    max-width: 100%;
+    margin: 0 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 6px;
+}
+
+
+
+.seedooItalics {
+    font-style: italic;
+    /*color: #01d202;*/
+    color: #2ab27b;
+}
+
+@media all and (min-width:320px) and (max-width:640px) {
+.aboutComp .image img{
+    max-width: 300px;
+}
+.aboutComp h1 {
+    font-size: 1.6em;
+}
+}
