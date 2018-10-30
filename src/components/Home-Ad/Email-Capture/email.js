@@ -11,7 +11,7 @@ export default class email extends Component {
                         <div className="contentInside">
                             <i className="icon"></i>
                             <span className="description">
-                                Stay up to date with current happens, entertainment and news.
+                                Stay up to date with current happenings, entertainment and news.
                             </span>
                             <input type="text" placeholder="Enter Email" />
                             <span className="pushButton">
