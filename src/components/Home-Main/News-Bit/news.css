@@ -9,3 +9,30 @@
     line-height: 1.2;
     font-weight: 400;
  }
+
+ .news-bits #page-numbers {
+     display: flex;
+ }
+ .news-bits #page-numbers li {
+    margin-right: 0.3em;
+    color: #fff;
+    background: #2ab27b;
+    user-select: none;
+    cursor: pointer;
+ }
+ .news-bits #page-numbers li {
+    margin-right: 0.3em;
+    color: #fff;
+    background: #46B989;
+    user-select: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 5px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.14);
+    font-weight: 700;
+ }
+
+ .news-bits #page-numbers li:hover,  .news-bits .active {
+    color: #fff;
+    background: #2ab27b;
+ }

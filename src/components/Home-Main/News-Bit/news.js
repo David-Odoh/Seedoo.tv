@@ -1,39 +1,57 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ReactPaginate from 'react-paginate';
 import ReactDOM from 'react-dom';
 
 import './news.css';
 import Tile from '../../../UI-Helpers/tile/tile';
 
 class news extends Component {
-    constructor(props) {
-        super(props);
-
+    constructor() {
+        super();
         this.state = {
-            data: [],
-            offset: 0,
-            perPage: 10,
-            pageCount: 0
-        }
+            currentPage: 1,
+            itemsPerPage: 5
+        };
+        this.handleClick = this.handleClick.bind(this);
     }
 
-    // handlePageClick = (data) => {
-    //     let selected = data.selected;
-    //     let offset = Math.ceil(selected * this.props.perPage);
-
-    //     this.setState({ offset: offset }, () => {
-    //         this.loadCommentsFromServer();
-    //     });
-    // };
+    handleClick(event) {
+        this.setState({
+            currentPage: Number(event.target.id)
+        });
+    }
 
     render() {
+        const { currentPage, itemsPerPage } = this.state;
+
+        // Logic for displaying current todos
+        const indexOfLastItem = currentPage * itemsPerPage;
+        const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+        const currentTodos = this.props.news.slice(indexOfFirstItem, indexOfLastItem);
+
+        // Logic for displaying page numbers
+        const pageNumbers = [];
+        for (let i = 1; i <= Math.ceil(this.props.news.length / itemsPerPage); i++) {
+            pageNumbers.push(i);
+        }
+
+        const renderPageNumbers = pageNumbers.map(number => {
+            return (
+                <li key={number}
+                    id={number}
+                    onClick={this.handleClick}
+                >
+                    {number}
+                </li>
+            );
+        });
+
+
         return (
             <div className="news-bits">
                 <h3>News Bit</h3>
                 <div className="tiles">
-                    {/*{this.setstate({ pageCount: Math.ceil(this.props.news.meta.total_count / this.props.news.meta.limit) })}*/}
-                    {this.props.news.map(nws => (
+                    {currentTodos.map(nws => (
                         <div key={nws.post.id}>
                             <Tile tileImg={"http://tv.seedoo.tv/news/upload/" + nws.post.fileurl}
                                 tileTitle={nws.post.title}
@@ -42,17 +60,9 @@ class news extends Component {
                         </div>
                     ))}
                 </div>
-                <ReactPaginate previousLabel={"previous"}
-                    nextLabel={"next"}
-                    breakLabel={<a href="">...</a>}
-                    breakClassName={"break-me"}
-                    pageCount={this.state.pageCount}
-                    marginPagesDisplayed={2}
-                    pageRangeDisplayed={5}
-                    onPageChange={this.handlePageClick}
-                    containerClassName={"pagination"}
-                    subContainerClassName={"pages pagination"}
-                    activeClassName={"active"} />
+                <ul id="page-numbers">
+                    {renderPageNumbers}
+                </ul>
             </div>
         )
     }
