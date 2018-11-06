@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import ReactDOM from 'react-dom';
 
 import './recent.css';
-import Tile from '../../../UI-Helpers/tile/tile';
+import VideoList from '../../../UI-Helpers/video-list/videoList';
+import Loading from '../../../img/loading.gif';
 
 class recent extends Component {
     constructor() {
@@ -35,7 +37,7 @@ class recent extends Component {
         // Logic for displaying current items
         const indexOfLastItem = currentPage * itemsPerPage;
         const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-        const currentTodos = this.props.videos.slice(indexOfFirstItem, indexOfLastItem);
+        const currentItems = this.props.videos.slice(indexOfFirstItem, indexOfLastItem);
 
         // Logic for displaying page numbers
         const pageNumbers = [];
@@ -54,16 +56,30 @@ class recent extends Component {
             );
         });
 
+        const loadingIcon = () => {
+            if (!this.props.videos.length) {
+                return (
+                    <div className="loading">
+                        <img src={Loading} alt="" />
+                    </div>
+                )
+            }
+        }
+
         return (
             <div className="recent">
                 <h3>Recent Videos</h3>
+                {loadingIcon()}
                 <div className="tiles">
-                    {currentTodos.map(video => (
+                    {currentItems.map(video => (
                         <div key={video.post.id}>
-                            <Tile tileImg={"http://tv.seedoo.tv/cms/siteupload/" + video.post.coverurl}
+                            <VideoList
+                                tileImg={"http://tv.seedoo.tv/cms/siteupload/" + video.post.coverurl}
+                                tileVid={"http://tv.seedoo.tv/cms/siteupload/" + video.post.videourl}
                                 tileTitle={video.post.title}
-                                tileSum="Don't forget to subscribe"
-                                btnTitle="Watch"></Tile>
+                                tileSum="Pls subscribe after watching"
+                                tileViews={video.post.views}
+                                btnTitle="Watch Now"></VideoList>
                         </div>
                     ))}
                 </div>

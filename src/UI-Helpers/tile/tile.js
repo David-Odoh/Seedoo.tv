@@ -27,7 +27,7 @@ const tile = (props) => {
                         portrait={4}
                         responsive={false}
                         dangerouslySetInnerHTML={{
-                            __html: `${props.tileSum}...`
+                            __html: `${props.tileSum}`
                         }}
                     />
                     <Link

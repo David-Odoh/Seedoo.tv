@@ -54,7 +54,7 @@ class news extends Component {
                         <div key={nws.post.id}>
                             <Tile tileImg={"http://tv.seedoo.tv/news/upload/" + nws.post.fileurl}
                                 tileTitle={nws.post.title}
-                                tileSum={nws.post.body}
+                                tileSum={`${nws.post.body}...`}
                                 btnTitle="Read More"></Tile>
                         </div>
                     ))}
