@@ -1,0 +1,41 @@
+.xperience .x-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xperience .x-tablet {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #000000 1%, #000000 66%, #000000 66%, #4f4f51 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #000000 1%,#000000 66%,#000000 66%,#4f4f51 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #000000 1%,#000000 66%,#000000 66%,#4f4f51 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 95%;
+    height: 50em;
+    margin-top: 30px;
+    border-radius: 5em;
+    border: 2px solid linear-gradient(45deg, #a4a5a5 0%,#e3e5e6 100%); /* Chrome10-25,Safari5.1-6 */
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: 40px;
+}
+
+.xperience .x-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+.xperience .x-menu span{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}

@@ -10,6 +10,12 @@
     font-weight: 400;
  }
 
+ .news-bits .bottom-pag {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
  .news-bits #page-numbers {
      display: flex;
  }
@@ -35,4 +41,24 @@
  .news-bits #page-numbers li:hover,  .news-bits .active {
     color: #fff;
     background: #2ab27b;
+ }
+
+ @media (max-width: 1090px) {
+    .news-bits .tiles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px; 
+        
+    }
+ }
+ @media (max-width: 770px) {
+    .news-bits .tiles {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px; 
+    }
+ }
+ @media (max-width: 500px) {
+    .news-bits .tiles {
+        grid-template-columns: 1fr;
+        grid-gap: 30px; 
+    }
  }

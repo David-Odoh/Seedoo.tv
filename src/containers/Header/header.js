@@ -58,7 +58,7 @@ export default class header extends Component {
                 <div className="hero">
                     <div className="row">
                         <div className="md-6 cols md-centered">
-                            <h1>Experience the <span className="our-green">Art</span> of Mobile Entertainment</h1>
+                            <h1 style={{ color: '#fff' }}>Experience the <span className="our-green">Art</span> of Mobile Entertainment</h1>
 
                             <form acceptCharset="UTF-8" action="#" method="get">
                                 <div className="displayNone">

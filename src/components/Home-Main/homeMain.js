@@ -8,8 +8,8 @@ export default class homeMain extends Component {
     render() {
         return (
             <div className="homeMain">
-                <RecentVideos></RecentVideos>
                 <HomepageNews></HomepageNews>
+                <RecentVideos></RecentVideos>
             </div>
         )
     }

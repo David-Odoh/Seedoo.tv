@@ -2,18 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Truncate from 'react-truncate-html';
 
-import './listItem.css';
+import './videoList.css';
 
-const ListItem = (props) => {
+const VideoList = (props) => {
     return (
         <div>
-            <div className="listItem">
+            <div className="videoList">
                 <div className="list-wrapper">
                     <div className="image-section">
                         <img className="image" src={props.tileImg} alt="Card Image" />
                     </div>
                     <div className="text-section">
-                        <div className="title">{props.tileTitle}</div>
+                        <Truncate
+                            lines={2}
+                            portrait={1}
+                            responsive={false}
+                            dangerouslySetInnerHTML={{
+                                __html: `${props.tileTitle}...`
+                            }}
+                            className="title"
+                        />
                         <div className="category"></div>
                         <hr />
                         <Truncate
@@ -32,11 +40,13 @@ const ListItem = (props) => {
                             </div>
                             <Link
                                 to={{
-                                    pathname: "/news-details",
+                                    pathname: "/videos-details",
                                     data: {
+                                        tileVid: props.tileVid,
                                         tileImg: props.tileImg,
                                         tileTitle: props.tileTitle,
-                                        tileSum: props.tileSum
+                                        tileSum: props.tileSum,
+                                        tileView: props.tileViews
                                     }
                                 }}
                                 className="watch-vid">
@@ -51,4 +61,4 @@ const ListItem = (props) => {
         </div>
     )
 }
-export default ListItem;
+export default VideoList;

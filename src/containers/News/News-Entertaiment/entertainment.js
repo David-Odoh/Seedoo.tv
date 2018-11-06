@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ReactDOM from 'react-dom';
 
-import './news.css';
-import Tile from '../../../UI-Helpers/tile/tile';
+import './entertainment.css';
+import ListItem from '../../../UI-Helpers/list-item/listItem';
+import Loading from '../../../img/loading.gif';
 
-class news extends Component {
+class Entertainment extends Component {
     constructor() {
         super();
         this.state = {
@@ -46,16 +47,29 @@ class news extends Component {
             );
         });
 
+        const loadingIcon = () => {
+            if (!this.props.news.length) {
+                return (
+                    <div className="loading">
+                        <img src={Loading} alt="" />
+                    </div>
+                )
+            }
+        }
+
         return (
-            <div className="news-bits">
-                <h3>News Bit</h3>
+            <div className="newsComp">
+                {loadingIcon()}
                 <div className="tiles">
+                    {console.log('Got news! ', this.props.news)}
                     {currentItems.map(nws => (
                         <div key={nws.post.id}>
-                            <Tile tileImg={"http://tv.seedoo.tv/news/upload/" + nws.post.fileurl}
+                            <ListItem
+                                tileImg={"http://tv.seedoo.tv/news/upload/" + nws.post.fileurl}
                                 tileTitle={nws.post.title}
                                 tileSum={nws.post.body}
-                                btnTitle="Read More"></Tile>
+                                tileViews={nws.post.views}
+                                btnTitle="Read More"></ListItem>
                         </div>
                     ))}
                 </div>
@@ -71,8 +85,8 @@ class news extends Component {
 
 const mapStateToProps = state => {
     return {
-        news: state.NB.newsBits
+        news: state.NB.entertainmentNews
     };
 };
 
-export default connect(mapStateToProps)(news);
+export default connect(mapStateToProps)(Entertainment);

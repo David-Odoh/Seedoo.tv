@@ -1,0 +1,22 @@
+.video-details .tile-views-back {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.video-details .back {
+    width: 100%;
+    display: grid;
+    justify-content: right;
+    align-items: right;
+    
+}
+.video-details .back span {
+    border:1px solid #2ab27b;
+    padding: 5px;
+    border-radius: 4px;
+    color: #2ab27b;
+    cursor: pointer;
+}

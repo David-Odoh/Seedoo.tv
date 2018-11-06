@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import TextTruncate from 'react-text-truncate';
+import { Link } from 'react-router-dom';
+import Truncate from 'react-truncate-html'
 
 import './tile.css';
 
@@ -11,24 +12,38 @@ const tile = (props) => {
                     <img className="card-img-top" src={props.tileImg} alt="Card image cap" />
                 </div>
                 <div className="tile-body">
-                    <TextTruncate
+                    <Truncate
+                        lines={2}
+                        portrait={1}
+                        responsive={false}
+                        dangerouslySetInnerHTML={{
+                            __html: `${props.tileTitle}...`
+                        }}
                         className="tile-title"
-                        line={1}
-                        truncateText="…"
-                        text={props.tileTitle}
                     />
                     <hr />
-                    <TextTruncate
-                        className="tile-text"
-                        line={3}
-                        truncateText="…"
-                        text={props.tileSum}
+                    <Truncate
+                        lines={4}
+                        portrait={4}
+                        responsive={false}
+                        dangerouslySetInnerHTML={{
+                            __html: `${props.tileSum}...`
+                        }}
                     />
-                    <a href="#!" className="watch-vid">
+                    <Link
+                        to={{
+                            pathname: "/news-details",
+                            data: {
+                                tileImg: props.tileImg,
+                                tileTitle: props.tileTitle,
+                                tileSum: props.tileSum
+                            }
+                        }}
+                        className="watch-vid">
                         <p className="read-more">{props.btnTitle}
                             <i className="fa fa-angle-double-right"></i>
                         </p>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -8,6 +8,21 @@ const videoHighlightReducer = (state = initialState, action) => {
                 ...state,
                 videoHighlights: action.payload
             };
+        case actionTypes.FETCH_SEEDOOTV_MUSIC_VIDEOS:
+            return {
+                ...state,
+                musicVideos: action.payload
+            };
+        case actionTypes.FETCH_SEEDOOTV_MOVIES_VIDEOS:
+            return {
+                ...state,
+                movieVideos: action.payload
+            };
+        case actionTypes.FETCH_SEEDOOTV_KIDDIES_VIDEOS:
+            return {
+                ...state,
+                kiddiesVideos: action.payload
+            };
         default:
             return state;
     }

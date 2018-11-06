@@ -6,6 +6,7 @@ import Home from './containers/Home/home';
 import Email from './components/Home-Ad/Email-Capture/email';
 import Footer from './containers/footer/footer';
 
+
 class App extends Component {
   render() {
     return (

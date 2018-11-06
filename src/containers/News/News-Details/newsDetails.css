@@ -1,0 +1,33 @@
+
+.newsDetails .tile img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    vertical-align: middle;
+    border-style: none;
+}
+
+.newsDetails .tile {
+    margin: 5px 10px 45px 10px;
+}
+
+.newsDetails p, .newsDetails span {
+    color: #555459;
+}
+
+.newsDetails h1, .newsDetails p {
+    padding: 5px 10px
+}
+ .newsDetails p {
+    padding: 0px 10px
+}
+
+@media (max-width: 640px) {
+    .newsDetails .title {
+        text-align: center
+    }
+}
