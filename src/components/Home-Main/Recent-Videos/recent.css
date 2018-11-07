@@ -51,6 +51,17 @@
     background: #2ab27b;
  }
 
+ .recent .loading {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.recent .loading img {
+    max-height: 100px;
+}
+
 
 
  @media (max-width: 1090px) {

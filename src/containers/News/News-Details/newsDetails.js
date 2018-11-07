@@ -61,6 +61,10 @@ class NewsDetails extends Component {
                                 <div className="tile-body">
                                     <p dangerouslySetInnerHTML={{ __html: this.state.tileSum }}></p>
                                 </div>
+                                <div className="tile-views-back">
+                                    <span className="tile-views">Views: {this.state.tileView}</span>
+                                    <div className="back"><span onClick={() => this.props.history.goBack()}>Back to Video List</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>

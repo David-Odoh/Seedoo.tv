@@ -31,7 +31,7 @@ export const fetchMovieVideos = (videos) => {
 
 export const fetchAllVideoHighlights = () => {
     return (dispatch) => {
-        // return axios.get(`${Base_URL}/=1`)
+        // return axios.get(`${Base_URL}=1`)
         return axios.get(`${Base_URL}/seedooVids1.json`)
             .then(response => {
                 dispatch(fetchVideoHighlights(response.data.posts))
@@ -43,7 +43,7 @@ export const fetchAllVideoHighlights = () => {
 };
 export const fetchAllKiddiesVideos = () => {
     return (dispatch) => {
-        // return axios.get(`${Base_URL}/=3`)
+        // return axios.get(`${Base_URL}=3`)
         return axios.get(`${Base_URL}/seedooVids1.json`)
             .then(response => {
                 dispatch(fetchKiddiesVideos(response.data.posts))
@@ -55,7 +55,7 @@ export const fetchAllKiddiesVideos = () => {
 };
 export const fetchAllMusicVideos = () => {
     return (dispatch) => {
-        // return axios.get(`${Base_URL}/=4`)
+        // return axios.get(`${Base_URL}=4`)
         return axios.get(`${Base_URL}/seedooVids1.json`)
             .then(response => {
                 dispatch(fetchMusicVideos(response.data.posts))
@@ -67,7 +67,7 @@ export const fetchAllMusicVideos = () => {
 };
 export const fetchAllMovieVideos = () => {
     return (dispatch) => {
-        // return axios.get(`${Base_URL}/=2`)
+        // return axios.get(`${Base_URL}=2`)
         return axios.get(`${Base_URL}/seedooVids1.json`)
             .then(response => {
                 dispatch(fetchMovieVideos(response.data.posts))

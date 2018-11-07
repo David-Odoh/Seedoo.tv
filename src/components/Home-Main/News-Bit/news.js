@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 import './news.css';
 import Tile from '../../../UI-Helpers/tile/tile';
+import Loading from '../../../img/loading.gif';
 
 class news extends Component {
     constructor() {
@@ -46,9 +47,20 @@ class news extends Component {
             );
         });
 
+        const loadingIcon = () => {
+            if (!this.props.news.length) {
+                return (
+                    <div className="loading">
+                        <img src={Loading} alt="" />
+                    </div>
+                )
+            }
+        }
+
         return (
             <div className="news-bits">
                 <h3>News Bit</h3>
+                {loadingIcon()}
                 <div className="tiles">
                     {currentItems.map(nws => (
                         <div key={nws.post.id}>

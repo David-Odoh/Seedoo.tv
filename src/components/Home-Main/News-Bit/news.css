@@ -43,6 +43,18 @@
     background: #2ab27b;
  }
 
+ .news-bits .loading {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.news-bits .loading img {
+    max-height: 100px;
+}
+
+
  @media (max-width: 1090px) {
     .news-bits .tiles {
         grid-template-columns: repeat(2, 1fr);
