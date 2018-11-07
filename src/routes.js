@@ -19,7 +19,7 @@ const Routes = () => (
         <Route exact path="/download" component={Download} />
         <Route path="/news" component={News} />
         <Route path="/videos" component={Videos} />
-        <Route exact path="/xperience" component={Xperience} />
+        <Route path="/xperience" component={Xperience} />
         <Route exact path="/news-details" component={DetailsPage} />
         <Route exact path="/videos-details" component={VideoDetails} />
     </div>

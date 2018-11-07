@@ -4,10 +4,13 @@
     justify-content: center;
     align-items: center;
 }
+.xperience .row {
+max-width: 85em
+}
 
 .xperience .x-tablet {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 4fr 1fr;
     justify-content: center;
     align-items: center;
     background: #000000; /* Old browsers */
@@ -25,17 +28,67 @@
 
 .xperience .x-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
 }
+.xperience a {
+    color: #fff;
+    text-decoration: none;
+}
 .xperience .x-menu span{
     display: grid;
     justify-content: center;
     align-items: center;
-    width: 200px;
+    width: 180px;
     height: 200px;
+}
+
+.xperience #one {
+    background: #fb4c29;
+}
+
+.xperience #two, .xperience #four {
+    background: #00ed01;
+}
+.xperience #three {
+    width: 365px;
+}
+
+.xperience .contained {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.xperience #five {
+    background: #2980b9;
+}
+
+.xperience #three {
+    background: #ed6d09;
+}
+
+.xperience .x-left {
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-gap: 10px;*/
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.xperience .constrained {
+   height: 600px;
+   overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+display: none;
 }
