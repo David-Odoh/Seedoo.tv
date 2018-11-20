@@ -6,7 +6,8 @@ const initialState = {
     humanNews: [],
     musicVideos: [],
     movieVideos: [],
-    kiddiesVideos: []
+    kiddiesVideos: [],
+    tabScreenVids: []
 }
 
 export default initialState;

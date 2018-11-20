@@ -1,0 +1,136 @@
+.bg-cover {
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #745fb5; 
+    background: -moz-linear-gradient(45deg, #745fb5 0%, #9066b8 100%); 
+    background: -webkit-linear-gradient(45deg, #745fb5 0%,#9066b8 100%); 
+    background: linear-gradient(45deg, #745fb5 0%,#9066b8 100%); */
+
+    background: #2d6596; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #2d6596 1%, #337aa6 67%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #2d6596 1%,#337aa6 67%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #2d6596 1%,#337aa6 67%); 
+    
+}
+
+.Form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2)!important;
+    background: white;
+    border-radius: 6px;
+    margin-top: 10rem;
+    max-width: 100rem;
+}
+
+.Form .top {
+    display: flex
+}
+
+.Form input, .Form textarea {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.Form input, .Form textarea  {
+    width: 100%;
+    padding: 1.2em;
+    border-width: 1px;
+    border-color: #c6c9cf!important;
+    border-style: solid;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #aaa!important;
+    line-height: 1.2;
+    margin: 0 15px 25px 0!important;
+}
+
+.Form input:focus, .Form textarea:focus {
+    border: 1px solid #333!important;
+    color: #333!important;
+}
+
+.Form .name-email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px
+}
+
+.Form .number-message {
+    display: grid;
+}
+
+.Form textarea {
+    height: 15rem
+}
+
+.Form .error {
+    margin-bottom: 3px;
+    color: red;
+    text-align: right;
+    font-size: 13px;
+}
+
+.Form button {
+    padding: 15px;
+    /* background: linear-gradient(5deg,#745fb5,#9066b8); */
+
+    background: #135996; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #135996 1%, #337aa6 67%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #135996 1%,#337aa6 67%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #135996 1%,#337aa6 67%); 
+    
+    color: white;
+    border: none;
+    width: 15rem;
+    font-weight: 600;
+    font-size: 17px
+}
+
+.Form button:hover {
+    color: #77dab2
+}
+
+.Form .left  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    /* background: linear-gradient(to bottom,rgba(105,41,158,.8) 45%,rgba(43,56,150,.95) 100%) center center/cover no-repeat,url(http://techbridges.com.ng/wp-content/uploads/seedoo-sam.png) center center/cover no-repeat; */
+
+    background: linear-gradient(to bottom, rgba(0, 99, 148, .83) 45%,rgba(0, 53, 81, .98) 100%) center center/cover no-repeat,url(http://techbridges.com.ng/wp-content/uploads/seedoo-sam.png) center center/cover no-repeat;
+}
+
+.Form .right {
+    padding: 20px;
+}
+
+.Form .left span {
+    font-family: Comfortaa-Regular
+}
+
+@media (max-width: 740px) {
+    .Form {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: 5rem 10px;
+        
+    }
+    .Form .left {
+        height: 10rem;
+        /* background: linear-gradient(to bottom,rgba(105,41,158,.8) 45%,rgba(43,56,150,.95) 100%) center center/cover no-repeat,url(http://techbridges.com.ng/wp-content/uploads/revslider/web-product-dark/map_on_ipad.jpg) center center/cover no-repeat; */
+
+        background: linear-gradient(to bottom, rgba(0, 99, 148, .8) 45%,rgba(0, 53, 81, .95) 100%) center center/cover no-repeat,url(http://techbridges.com.ng/wp-content/uploads/seedoo-sam.png) center center/cover no-repeat;
+    }
+}
+
+@media (max-width: 480px) {
+
+.Form .name-email {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}

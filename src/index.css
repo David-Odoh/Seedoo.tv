@@ -1,3 +1,16 @@
+@font-face {
+  font-family: Comfortaa-Light;
+  src:url('./fonts/Comfortaa-Light.ttf');
+}
+@font-face {
+  font-family: Comfortaa-Regular;
+  src:url('./fonts/Comfortaa-Regular.ttf');
+}
+@font-face {
+  font-family: Comfortaa-Bold;
+  src:url('./fonts/Comfortaa-Bold.ttf');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16,7 +29,17 @@ code {
 .card {
   display: grid;
   color: #fff;
-  background: linear-gradient(5deg,#745fb5,#9066b8);
+  /* background: linear-gradient(5deg,#745fb5,#9066b8); */
+  background: #032c48; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #032c48 0%, #014768 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #032c48 0%,#014768 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #032c48 0%,#014768 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  background: #2d6596; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #2d6596 1%, #337aa6 67%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #2d6596 1%,#337aa6 67%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #2d6596 1%,#337aa6 67%); 
+  
   box-shadow: rgba(102, 119, 136, 0.55) .5px 1px 2px;
   border-radius: 2px;
   padding: 16px;
@@ -25,7 +48,8 @@ code {
 }
 
 .card:hover {
-  background: #5f4aa1;
+  /* background: #5f4aa1; */
+  background: #1d2d47;
 }
 
 .card p, .card a strong {

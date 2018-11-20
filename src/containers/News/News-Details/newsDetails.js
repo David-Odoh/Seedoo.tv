@@ -63,7 +63,7 @@ class NewsDetails extends Component {
                                 </div>
                                 <div className="tile-views-back">
                                     <span className="tile-views">Views: {this.state.tileView}</span>
-                                    <div className="back"><span onClick={() => this.props.history.goBack()}>Back to Video List</span></div>
+                                    <div className="back"><span onClick={() => this.props.history.goBack()}>Back to News List</span></div>
                                 </div>
                             </div>
                         </div>

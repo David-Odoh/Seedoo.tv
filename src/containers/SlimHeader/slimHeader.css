@@ -4,7 +4,13 @@
     top: 0;
     left: 0;
     z-index: 100;
-    background: linear-gradient(5deg,#745fb5,#9066b8);
+    /* background: linear-gradient(5deg,#745fb5,#9066b8); */
+
+    background: #2d6596; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #2d6596 1%, #337aa6 67%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #2d6596 1%,#337aa6 67%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #2d6596 1%,#337aa6 67%); 
+
     box-shadow: 0 1px 1px rgba(0,0,0,.1);
 }
 

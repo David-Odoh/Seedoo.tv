@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './contactUs.css';
 import SlimHeader from '../SlimHeader/slimHeader';
 import TitleBar from '../TitleBar/titleBar';
+import Form from './Form/form';
 
 export default class ContactUs extends Component {
     render() {
@@ -10,7 +11,7 @@ export default class ContactUs extends Component {
             <div>
                 <SlimHeader></SlimHeader>
                 <TitleBar barTitle="Contact Us"></TitleBar>
-                Contact Us Works but isn't finished
+                <Form></Form>
             </div>
         )
     }

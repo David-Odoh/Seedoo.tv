@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './email.css';
 
@@ -7,7 +8,7 @@ export default class email extends Component {
         return (
             <div>
                 <div className="email-wrapper">
-                    <a className="card email-card">
+                    <Link to="" className="card email-card">
                         <div className="contentInside">
                             <i className="icon"></i>
                             <span className="description">
@@ -18,7 +19,7 @@ export default class email extends Component {
                                 Subscribe
                             </span>
                         </div>
-                    </a>
+                    </Link>
                 </div>
             </div>
         )

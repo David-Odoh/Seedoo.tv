@@ -5,6 +5,7 @@ import './slimHeader.css';
 import Logo from '../../img/SeeDooTV_small.png';
 import searchIcon from '../../img/search_icon_small.png';
 
+
 export default class SlimHeader extends Component {
     render() {
         const styles = {
@@ -24,23 +25,24 @@ export default class SlimHeader extends Component {
                         <div className="left">
                             <div className="logo left">
                                 <Link to='/'>
-                                    <a>
-                                        <img src={Logo} />
-                                    </a>
+                                    <img src={Logo} />
                                 </Link>
                             </div>
                             <div className="help left">
                                 <span className="helpCenter header-link">
                                     <Link to='/contact'>
-                                        <a>Help Center</a>
+                                        Help Center
                                     </Link>
                                 </span>
                             </div>
                             <div className="center left">
-                                <form className="search" accept-charset="UTF-8" action="/search" method="get" role="search">
-                                    <div style={{ "display": "none" }}><input name="utf8" type="hidden" value="✓" /></div>
+                                <form className="search" >
+                                    {/* <div style={{ "display": "none" }}><input name="utf8" type="hidden" value="✓" /></div>
                                     <input id="query" name="query" style={styles.searchIcon} title="Experience Lagos" placeholder="Experience Lagos" type="search" />
-                                    <input name="commit" type="submit" value="Search" />
+                                    <input name="commit" type="submit" value="Search" /> */}
+
+                                    <div style={{ "display": "none" }}><input /></div>
+                                    <input id="query" name="query" style={styles.searchIcon} title="Experience Lagos" placeholder="Experience Lagos" type="search" />
                                 </form>
                             </div>
                         </div>

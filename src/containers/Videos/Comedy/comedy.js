@@ -37,14 +37,16 @@ class Comedy extends Component {
         }
 
         const renderPageNumbers = pageNumbers.map(number => {
-            return (
-                <li key={number}
-                    id={number}
-                    onClick={this.handleClick}
-                >
-                    {number}
-                </li>
-            );
+            if (number < 10) {
+                return (
+                    <li key={number}
+                        id={number}
+                        onClick={this.handleClick}
+                    >
+                        {number}
+                    </li>
+                );
+            }
         });
 
         const loadingIcon = () => {

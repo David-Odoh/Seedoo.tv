@@ -39,7 +39,7 @@ class News extends Component {
                     <div className="main-area">
                         <div className="top-strip">
                             <div className="category">
-                                <div className="item-count">470 Items Listed</div>
+                                <div className="item-count">Items List</div>
                                 <div className="category-tabs">
 
                                     <Link to={`${this.props.match.url}/local`}>

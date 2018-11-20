@@ -32,10 +32,13 @@
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 3px;
-    background: #4f3d85;
+    /* background: #4f3d85; */
+    background: #42a5b5;
     color: #fff;
 }
 
 .pushButton:hover {
-    background: #3e3069;
+    /* background: #3e3069; */
+    background: #2b617b;
 }
+

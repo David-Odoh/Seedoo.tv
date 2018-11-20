@@ -14,9 +14,11 @@ export default class DownloadComp extends Component {
                             <h1>Get Our <span>Mobile</span> App</h1>
                             <p>SeeDoo TV is a premier innovative and interactive platform that provides real time, Interactive and engaging content on the go.</p>
                         </div>
-                        <div className="download-btn">
-                            Download <span>V 1.0</span>
-                        </div>
+                        <a href="https://play.google.com/store?hl=en" target="_blank">
+                            <div className="download-btn">
+                                Download <span>V 1.0</span>
+                            </div>
+                        </a>
                     </div>
 
                     <div className="email-capture">

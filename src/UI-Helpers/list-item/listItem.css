@@ -82,6 +82,9 @@
         margin: 0;
         
     }
+    Player {
+        padding-top: 0% !important;
+    }
 }
 
 @media (max-width: 560px) {

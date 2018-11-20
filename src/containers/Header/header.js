@@ -26,17 +26,16 @@ export default class header extends Component {
 
                             <div className="login right dark-bg animated slideInRight">
                                 <ul>
-                                    <Link to='/download'>
-                                        <li className="left header-link">
-                                            <a>Download Seedoo App!</a>
-                                        </li>
-                                    </Link>
+
                                     <li className="left green-blue">
+                                        <Link className="call-to-action" to='/download'> Download Seedoo App!</Link>
+                                    </li>
+                                    {/* <li className="left green-blue">
                                         <a className="call-to-action">LOG IN</a>
                                     </li>
                                     <li className="left green-blue">
                                         <a className="call-to-action">REGISTER</a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             </div>
                         </div>
@@ -46,9 +45,7 @@ export default class header extends Component {
                         <div className="row">
                             <div className="logo left animated slideInLeft">
                                 <Link to='/'>
-                                    <a>
-                                        <img src={Logo} />
-                                    </a>
+                                    <img src={Logo} />
                                 </Link>
                             </div>
                         </div>
@@ -60,7 +57,7 @@ export default class header extends Component {
                         <div className="md-6 cols md-centered">
                             <h1 style={{ color: '#fff' }}>Experience the <span className="our-green">Art</span> of Mobile Entertainment</h1>
 
-                            <form acceptCharset="UTF-8" action="#" method="get">
+                            {/* <form acceptCharset="UTF-8" action="#" method="get">
                                 <div className="displayNone">
                                     <input name="utf8" type="hidden" value="✓" />
                                 </div>
@@ -68,6 +65,14 @@ export default class header extends Component {
                                     <input id="homeSearch" className="animated fadeInDown" name="query" placeholder="What would you like to find?" type="text" />
                                 </div>
                                 <input className="btn blue visibilityHidden" name="commit" type="submit" value="Search" />
+                            </form> */}
+                            <form>
+                                <div className="displayNone">
+                                    <input />
+                                </div>
+                                <div className="inputGroup editSelect">
+                                    <input id="homeSearch" className="animated fadeInDown" name="query" placeholder="What would you like to find?" type="text" />
+                                </div>
                             </form>
                         </div>
                     </div>

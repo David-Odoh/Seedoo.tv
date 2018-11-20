@@ -53,4 +53,10 @@
     .newsDetails .title {
         text-align: center
     }
+
+    .newsDetails .tile-views-back {
+        padding: 18px;
+        font-size: 16px;
+        font-weight: 600;
+    }
 }

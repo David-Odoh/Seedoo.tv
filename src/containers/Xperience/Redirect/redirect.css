@@ -1,0 +1,41 @@
+.redirect {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100%;
+    
+}
+.redirect h1 {
+    font-size: 3em;
+}
+
+.redirect h1, .redirect p, .redirect .download-btn {
+    color: #555459;
+    text-align: center;
+}
+
+.redirect .title {
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+    width: 500px;
+}
+
+.redirect .download-btn {
+    padding: 10px 15px;
+    background: #2ab27b;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px 20%;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.redirect .download-btn span {
+    font-style: italic;
+    font-size: .6em;
+    font-weight: 500;
+}

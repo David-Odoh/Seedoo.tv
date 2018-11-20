@@ -61,7 +61,6 @@ class Human extends Component {
             <div className="newsComp">
                 {loadingIcon()}
                 <div className="tiles">
-                    {console.log('Got news! ', this.props.news)}
                     {currentItems.map(nws => (
                         <div key={nws.post.id}>
                             <ListItem
@@ -85,7 +84,7 @@ class Human extends Component {
 
 const mapStateToProps = state => {
     return {
-        news: state.NB.entertainmentNews
+        news: state.NB.humanNews
     };
 };
 

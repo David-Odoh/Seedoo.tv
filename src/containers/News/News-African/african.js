@@ -37,14 +37,16 @@ class African extends Component {
         }
 
         const renderPageNumbers = pageNumbers.map(number => {
-            return (
-                <li key={number}
-                    id={number}
-                    onClick={this.handleClick}
-                >
-                    {number}
-                </li>
-            );
+            if (number < 10) {
+                return (
+                    <li key={number}
+                        id={number}
+                        onClick={this.handleClick}
+                    >
+                        {number}
+                    </li>
+                );
+            }
         });
 
         const loadingIcon = () => {
@@ -61,7 +63,6 @@ class African extends Component {
             <div className="newsComp">
                 {loadingIcon()}
                 <div className="tiles">
-                    {console.log('Got news! ', this.props.news)}
                     {currentItems.map(nws => (
                         <div key={nws.post.id}>
                             <ListItem
@@ -85,7 +86,7 @@ class African extends Component {
 
 const mapStateToProps = state => {
     return {
-        news: state.NB.entertainmentNews
+        news: state.NB.africanNews
     };
 };
 

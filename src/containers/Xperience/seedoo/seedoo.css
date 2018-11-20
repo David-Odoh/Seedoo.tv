@@ -1,6 +1,7 @@
 .seedoo .x-display {
-    background: wheat;
-    height: 410px;
+    /* background: wheat; */
+    height: 100%;
+    /* height: 410px; */
     width: auto;
 }
 

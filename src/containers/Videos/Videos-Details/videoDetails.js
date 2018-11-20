@@ -68,9 +68,8 @@ class VideoDetails extends Component {
                                         src={this.state.tileVid}
                                         className="video-react-big-play-button-center"
                                     />
-
                                 </div>
-
+                                <p dangerouslySetInnerHTML={{ __html: this.state.tileSum }}></p>
                                 <div className="tile-views-back">
                                     <span className="tile-views">Video Views: {this.state.tileView}</span>
                                     <div className="back"><span onClick={() => this.props.history.goBack()}>Back to Video List</span></div>
