@@ -2,7 +2,8 @@ import * as actionTypes from './types';
 import axios from 'axios';
 
 // const Base_URL = 'http://localhost:3000/api';
-const Base_URL = 'http://tv.seedoo.tv/news/news-jason.php?category';
+// const Base_URL = 'http://tv.seedoo.tv/news/news-jason.php?category';
+const Base_URL = 'http://seedoo.tv/apis/news-jason.php?category';
 
 export const fetchNewsBits = (news) => {
     return {

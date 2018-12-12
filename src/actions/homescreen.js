@@ -13,7 +13,8 @@ export const fetchHomeScreenVids = (videos) => {
 
 export const fetchAllHomeScreenVids = () => {
     return (dispatch) => {
-        return axios.get('http://tv.seedoo.tv/taxi/mainscreejson.php')
+        return axios.get('http://seedoo.tv/apis/mainscreejson.php')
+            // return axios.get('http://tv.seedoo.tv/taxi/mainscreejson.php')
             // return axios.get(`${Base_URL}/homescreen.json`)
             .then(response => {
                 dispatch(fetchHomeScreenVids(response.data.posts))
